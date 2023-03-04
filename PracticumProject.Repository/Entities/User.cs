@@ -8,7 +8,7 @@ namespace PracticumProject.Repositories.Entities
 {
     public class User : Person
     {
-        private static int IdForAll;
+        //private static int IdForAll;
         public string LastName { get; set; }
 
         public int GenderId { get; set; }
@@ -18,13 +18,5 @@ namespace PracticumProject.Repositories.Entities
 
         public List<Child> Children { get; set; }
 
-        static User()
-        {
-            IdForAll = 0;
-        }
-        public User()
-        {
-            this.Id = User.IdForAll;
-        }
     }
 }

@@ -9,16 +9,6 @@ namespace PracticumProject.Repositories.Entities
 
     public class Child : Person
     {
-        private static int IdForAll;
-
-        public Child()
-        {
-            this.Id = Child.IdForAll++;
-        }
-        static Child()
-        {
-            IdForAll = 0;
-        }
 
     }
 }
